@@ -33,9 +33,15 @@ Ensure you have the following installed:
 import streamlit as st
 import requests
 import json
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
+import re
+import time
+import random
+from bs4 import BeautifulSoup
+import concurrent.futures
+from fake_useragent import UserAgent
+import plotly.express as px
 ```
 
 #### 2. Set Up OpenAI API Key
@@ -43,14 +49,15 @@ import matplotlib.pyplot as plt
 - Add your OpenAI API key:
 ```python
 [general]
-OPENAI_API_KEY = "your_openai_api_key_here"
+OPENAI_API_KEY = "openai_api_key_here"
+SCRAPER_API_KEY = "scraper_api_key_here"
 ```
 
 ## Usage
 
-#### 1. Launch the app using:
-```python
-python -m streamlit run FinalProjectV3.py
+#### 1. Launch inside an integrated terminal using:
+```
+python -m streamlit run AppCodeFinal.py
 ```
 
 
@@ -71,13 +78,20 @@ python -m streamlit run FinalProjectV3.py
 - Description
 
 
-#### 4. Click the "Generate Insights and Visuals" button to:
+#### 4. Click the "Find Cheaper Alternatives" button to:
 
 - View scatter plots of Price vs Rating.
 
 - Identify Best Value Zone for smart product picks.
 
 - Get GPT-powered recommendations with reasoning and summary.
+
+
+
+
+
+
+
 
 
 
