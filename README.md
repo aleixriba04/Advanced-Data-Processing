@@ -44,7 +44,7 @@ from fake_useragent import UserAgent
 import plotly.express as px
 ```
 
-#### 2. Set Up OpenAI API Key
+#### 2. Set Up your API Keys
 - Create a .streamlit/secrets.toml file in the project directory.
 - Add your API keys:
 ```python
