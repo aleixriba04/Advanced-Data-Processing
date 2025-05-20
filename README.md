@@ -46,7 +46,7 @@ import plotly.express as px
 
 #### 2. Set Up OpenAI API Key
 - Create a .streamlit/secrets.toml file in the project directory.
-- Add your OpenAI API key:
+- Add your API keys:
 ```python
 [general]
 OPENAI_API_KEY = "openai_api_key_here"
